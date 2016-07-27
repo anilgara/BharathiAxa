@@ -15,10 +15,10 @@
 
 				// Client has to fill the claims and call the callback.
 				$.ajax({
-					url: "https://devbots.kore.com/api/users/sts",
+					url: "https://pilot-bots.kore.com/api/users/sts",
 					type: 'post',
 					headers: {
-						Authorization: "bearer OWFoqA8G5W55AB6s8X4BjZfq6rBNKaRjkKuBqw2a4-2BqVO3O6mFgPTnaeJwNxi"
+						Authorization: "bearer Pau__EjUVfzuXChTBDtWnOD7tyKlMBSrUGPkYSuxhUoJcKjH74Fdo-vaQ0Q-FLp9"
 					},
 					dataType: 'jsonp',
 					success: function (data) {
@@ -30,11 +30,11 @@
 
 			var botOptions = {};
 			botOptions.logLevel = 'debug';
-			botOptions.koreAPIUrl = "https://devbots.kore.com/api/";
+			botOptions.koreAPIUrl = "https://pilot-bots.kore.com/api/";
 			botOptions.assertionFn = assertion;
 			botOptions.isLoggedIn = false; // false: triggers anonymus flow. set it to true for log-in flow.
-			botOptions.clientId   = "cs-618110e2-856e-502a-9fa5-6b0b9bbf920f";
-			botOptions.botInfo = {name:"Bharti AXA Life Insurance","_id":"st-ff1e586b-2a95-5f28-a377-7150a6dc2b9a"}; // pass bot name and stream id
+			botOptions.clientId   = "cs-a19e7df5-dc25-5ecf-908c-c5caf708a654";
+			botOptions.botInfo =  {name:"IOCl Employee BOT","_id":"st-199d98c8-1447-51bb-a1a7-2be0c9c3510b"}; // pass bot name and stream id
 			
 			var chatConfig={
 				botOptions:botOptions
@@ -46,7 +46,7 @@
 			});
 		});
 		</script>
-		<style type="text/css">
+		<!-- <style type="text/css">
 		button.openChatWindow{    
 		    position: fixed;
 		    left: 790px;
@@ -60,10 +60,10 @@
 		    cursor: pointer;
 		    font-weight: 600;
             }
-		</style>
+		</style> -->
 	</head>
 	<body>
-	    <img src="/client/bharti-axagi-new.png" alt="No Image" style="width: 100%;height: 100%; background-image:norepeat">
+	    <!-- <img src="/client/bharti-axagi-new.png" alt="No Image" style="width: 100%;height: 100%; background-image:norepeat"> -->
 		<div id="chatContainer">
 		<button class="openChatWindow">Open Chat Window</button>
 		</div>
